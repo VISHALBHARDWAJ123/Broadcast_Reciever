@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/mBatteryStatus"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="checkBatteryStatus"
+            android:text=" Battery status" />
+
+        <Button
+            android:id="@+id/mBluetoothbtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="Check Bluetooth" />
+
+        <Button
+            android:id="@+id/mInternetBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:onClick="checkInternetConnectivity"
+            android:text="Check Connectivity" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+
+                android:id="@+id/mBluetoothStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="Battery and Connectivity status"
+                android:padding="15dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/mDeviceTExt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mBluetoothStatus"
+                android:layout_margin="10dp"
+                android:hint="Battery and Connectivity status"
+                android:padding="15dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/mStatusText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:hint="Battery and Connectivity status"
+                android:padding="15dp"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
