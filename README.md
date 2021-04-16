@@ -8,7 +8,7 @@ An Android app also can send custom broadcasts to notify other apps of something
 When a broadcast is sent, the system automatically rouest that broadcast to the app which have sub to that particular broadcast
 Broadcast can be used as a messaging system accross applications & outside of the user's normal flow.
 Basicly there are two type of Broadcast
-1.Implicit Broadcast or Static Broadcast
-2.Explicit Broadcast or Dynamic Broadcast
+1.Implicit Broadcast 
+2.2.Explicit Broadcast 
 
 for more details please visit following page : https://developer.android.com/
